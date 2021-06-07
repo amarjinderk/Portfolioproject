@@ -128,3 +128,6 @@ join [portfolio database]..covidvaccine vac
 on dea.location=  vac.location
 and dea.date= vac.date
 where dea.continent is not null
+
+Select *, (rollingpeoplevaccinated/Population)*100
+From #PercentPopulationVaccinated
